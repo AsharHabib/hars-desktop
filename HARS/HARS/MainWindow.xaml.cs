@@ -44,7 +44,7 @@ namespace HARS
             ParentFrame.Navigate(App.loginPage);
             App.loginPage.usernameInput.Text = string.Empty;
             App.loginPage.passwordInput.Password = string.Empty;
-            App.ParentWindowRef.LogoutButton.Visibility = Visibility.Collapsed;
+            App.ParentWindowRef.NavBar.Visibility = Visibility.Hidden;
             User.LogoutUser(App.user);
         }
         private void MinimizeWindow(object sender, RoutedEventArgs e)

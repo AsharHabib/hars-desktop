@@ -21,8 +21,9 @@
                 <Button x:Name="MinimizeButton" Content="-" Grid.Row="0" Width="50" Height="Auto" Click="MinimizeWindow"/>
                 <Button x:Name="ExitButton" Content="X" Grid.Row="0" Width="50" Height="Auto" Background="#FFC83737" Click="CloseApp"/>
             </StackPanel>
-            <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right">
-                <Button x:Name="LogoutButton" Content="Logout" Grid.Row="1" Width="50" Height="Auto" Click="Logout" Visibility="Hidden" HorizontalAlignment="Right"/>
+            <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right" Visibility="Hidden" Name="NavBar">
+                <Label x:Name="GreetingsLabel" Width="120" HorizontalAlignment="Left"></Label>
+                <Button x:Name="LogoutButton" Content="Logout" Grid.Row="1" Width="50" Height="Auto" Click="Logout"  HorizontalAlignment="Right"/>
             </StackPanel>
             <Frame Name="ParentFrame" NavigationUIVisibility="Hidden" Grid.Row="2"/>
         </Grid>

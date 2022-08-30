@@ -19,7 +19,7 @@ namespace HARS.DAO
             var cmd = new NpgsqlCommand(sql, conn);
 
             NpgsqlDataReader rdr = cmd.ExecuteReader();
-            User? user = null;
+            User user = null;
             while (rdr.Read())
             {
                 user = new User(rdr.GetInt32(0), rdr.GetString(1), rdr.GetString(2), rdr.GetString(3), rdr.GetString(4), rdr.GetString(5));

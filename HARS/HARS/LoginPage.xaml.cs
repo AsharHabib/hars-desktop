@@ -34,7 +34,8 @@ namespace HARS
             if (App.user != null)
             {
                 App.ParentWindowRef.ParentFrame.Navigate(App.dashboard);
-                App.ParentWindowRef.LogoutButton.Visibility = Visibility.Visible;
+                App.ParentWindowRef.NavBar.Visibility = Visibility.Visible;
+                App.ParentWindowRef.GreetingsLabel.Content = "Hello " + App.user.FirstName + " " + App.user.LastName + "!";
             }
             else
             {
