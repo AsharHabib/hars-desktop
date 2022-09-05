@@ -52,5 +52,13 @@ namespace HARS
         {
             WindowState = WindowState.Minimized;
         }
+        private void DashboardClick(object sender, RoutedEventArgs e)
+        {
+            ParentFrame.Navigate(App.dashboard);
+        }
+        private void ReservationsClick(object sender, RoutedEventArgs e)
+        {
+            ParentFrame.Navigate(App.reservationsPage);
+        }
     }
 }

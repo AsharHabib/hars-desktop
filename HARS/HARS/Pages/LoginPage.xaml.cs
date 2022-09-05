@@ -32,7 +32,7 @@ namespace HARS.Pages
             App.user = VerifyLoginCredentials(username, password);
             if (App.user != null)
             {
-                App.ParentWindowRef.ParentFrame.Navigate(App.reservationsPage);
+                App.ParentWindowRef.ParentFrame.Navigate(App.dashboard);
                 App.ParentWindowRef.NavBar.Visibility = Visibility.Visible;
                 App.ParentWindowRef.GreetingsLabel.Content = "Hello " + App.user.FirstName + " " + App.user.LastName + "!";
             }

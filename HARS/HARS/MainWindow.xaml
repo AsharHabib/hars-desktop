@@ -23,6 +23,8 @@
             </StackPanel>
             <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right" Visibility="Hidden" Name="NavBar">
                 <Label x:Name="GreetingsLabel" Width="120" HorizontalAlignment="Left"></Label>
+                <Button x:Name="DashboardButton" Content="Dashboard" Grid.Row="1" Width="Auto" Height="Auto" Click="DashboardClick"  HorizontalAlignment="Right"/>
+                <Button x:Name="ReservationsButton" Content="My Reservations" Grid.Row="1" Width="Auto" Height="Auto" Click="ReservationsClick"  HorizontalAlignment="Right"/>
                 <Button x:Name="LogoutButton" Content="Logout" Grid.Row="1" Width="50" Height="Auto" Click="Logout"  HorizontalAlignment="Right"/>
             </StackPanel>
             <Frame Name="ParentFrame" NavigationUIVisibility="Hidden" Grid.Row="2"/>

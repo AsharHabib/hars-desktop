@@ -8,7 +8,7 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="ReservationsPage">
 
-    <Grid>
-        
+    <Grid Width="800" Height="1000">
+        <Label Content="ok then" Background="AliceBlue"></Label>
     </Grid>
 </Page>
