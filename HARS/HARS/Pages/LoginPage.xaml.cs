@@ -13,9 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using static HARS.DAO.LoginDAO;
-using HARS.Models;
 
-namespace HARS
+namespace HARS.Pages
 {
     /// <summary>
     /// Interaction logic for LoginPage.xaml
@@ -44,6 +43,5 @@ namespace HARS
                 MessageBox.Show("rong username/pasword, try agane");
             }
         }
-
     }
 }
