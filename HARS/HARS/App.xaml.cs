@@ -6,6 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 using HARS.Models;
+using HARS.Pages;
 
 namespace HARS
 {
@@ -17,6 +18,7 @@ namespace HARS
         public static MainWindow? ParentWindowRef;
         public static LoginPage? loginPage;
         public static Dashboard? dashboard;
+        public static ReservationsPage? reservationsPage;
         public static User? user;
     }
 }

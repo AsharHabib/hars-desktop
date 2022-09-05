@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using static HARS.DAO.LoginDAO;
 using HARS.Models;
+using HARS.Pages;
 
 namespace HARS
 {
@@ -31,7 +32,7 @@ namespace HARS
             App.ParentWindowRef = this;
             App.loginPage = new LoginPage();
             App.dashboard = new Dashboard();
-
+            App.reservationsPage = new ReservationsPage();
 
             ParentFrame.Navigate(App.loginPage);
         }
