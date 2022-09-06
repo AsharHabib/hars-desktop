@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
 using System.Windows;
 using HARS.Models;
@@ -20,5 +21,6 @@ namespace HARS
         public static Dashboard? dashboard;
         public static ReservationsPage? reservationsPage;
         public static User? user;
+        public static readonly HttpClient client = new HttpClient();
     }
 }

@@ -12,6 +12,10 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Net.Http;
+using HARS.Models;
+using static HARS.Models.AuthToken;
+using System.Net.Http.Json;
 
 namespace HARS.Pages
 {
@@ -23,6 +27,11 @@ namespace HARS.Pages
         public ReservationsPage()
         {
             InitializeComponent();
+        }
+        private async void Reservations_Loaded(object sender, RoutedEventArgs e)
+        {
+            Console.WriteLine("hello");
+            
         }
     }
 }
