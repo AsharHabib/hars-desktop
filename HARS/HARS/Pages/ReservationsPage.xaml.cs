@@ -30,8 +30,8 @@ namespace HARS.Pages
         }
         private async void Reservations_Loaded(object sender, RoutedEventArgs e)
         {
-            Console.WriteLine("hello");
-            
+            string authToken = await GetAuthToken();
+            Console.WriteLine(authToken);
         }
     }
 }
